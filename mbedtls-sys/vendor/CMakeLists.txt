@@ -1,9 +1,13 @@
 cmake_minimum_required(VERSION 2.6)
+set(CMAKE_TRY_COMPILE_TARGET_TYPE "STATIC_LIBRARY")
 if(TEST_CPP)
     project("mbed TLS" C CXX)
 else()
     project("mbed TLS" C)
 endif()
+
+SET (CMAKE_C_COMPILER_WORKS 1)
+SET (CMAKE_CXX_COMPILER_WORKS 1)
 
 option(USE_PKCS11_HELPER_LIBRARY "Build mbed TLS with the pkcs11-helper library." OFF)
 option(ENABLE_ZLIB_SUPPORT "Build mbed TLS with zlib library." OFF)
