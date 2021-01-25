@@ -1,5 +1,4 @@
 cmake_minimum_required(VERSION 2.6)
-set(CMAKE_TRY_COMPILE_TARGET_TYPE "STATIC_LIBRARY")
 if(TEST_CPP)
     project("mbed TLS" C CXX)
 else()
